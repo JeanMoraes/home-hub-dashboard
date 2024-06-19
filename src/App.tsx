@@ -2,6 +2,7 @@ import { Box, Grid } from "@mui/material";
 import { HeroCard } from "./components/HeroCard/Index";
 import { UsersCard } from "./components/UsersCard/Index";
 import { WaterCard } from "./components/WaterCard/Index";
+import EnergyCard from "./components/EnergyCard/Index";
 
 export default function Root() {
   return (
@@ -23,6 +24,9 @@ export default function Root() {
 				</Grid>
 				<Grid item xs={4}>
 					<WaterCard />
+				</Grid>
+        <Grid item xs={4}>
+					<EnergyCard currentMonthUsage={342} lastMonthUsage={127} />
 				</Grid>
 			</Grid>
 		</Box>
